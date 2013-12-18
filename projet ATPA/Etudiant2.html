@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Question Etudiant</title>
+		<meta CHARSET="utf-8" />
+		<!-- Librairire bootstrap-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen" />
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		
+		<!--Autres-->
+		<script src="js/styleSup.js"></script>	
+		<script src="bootstrap/js/jquery.js"></script>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body onload="decompte(), cache()">
+		<section class="container-fluid">
+			
+			<header id="headquestetu" class="page-header well">
+				<a href="acceuil.html" title="cliquer ici pour retourner à la page d'acceuil">Acceuil</a>
+				<h1 class="text-center" id="titrequestetu">Répondez à la question posée</h1>
+			</header>
+		
+			<section class="text-center">
+			<button class="btn btn-info btn-large" onclick="question()" title="cliquer ici pour afficher et/ou masquer la question">
+				Question</button>
+			</section>
+			
+			<section id="question" class="container-fluid text-center">
+				<br /> <br />
+				<span>Avez vous fait vos devoirs?</span>
+				<br />
+			</section>
+			
+			<!--<section class="row-fluid">
+				<form class="well span4 text-center offset4 centered">
+					<span id="compt2"></span>
+				</form>
+			</section>-->
+				
+			<br />	
+			<section id="div_bouton" class="text-center">
+				<button id="btnEtuYes" class="btn btn-info btn-large" onclick="desactivebtn()">OUI</button>
+				<button id="btnEtuNo" class="btn btn-info btn-large offset1" onclick="desactivebtn()">NON</button>
+			</section>
+				
+			
+		</section>
+	</body>
+</html>
